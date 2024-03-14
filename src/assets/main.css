@@ -1,0 +1,213 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #app {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+/* padding: 2rem; */
+/* font-weight: normal; */
+/* } */
+* {
+  padding: 0;
+}
+
+.container {
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  display: flex;
+}
+
+.container .showcase {
+  width: 50vw;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  background: #f8eaff;
+  border-radius: 20px;
+  padding: 24px 45px;
+}
+
+.container .showcase .showcase-image {
+  margin-top: 47px;
+  margin-bottom: 24px;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container .showcase .showcase-image img {
+  width: 100%;
+}
+
+.container .showcase .showcase-text {
+  display: flex;
+  gap: 8px;
+  font-weight: 700;
+  font-family: Lora;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .showcase .showcase-text h1 {
+  color: #61227d;
+  font-size: 20px;
+}
+
+.container .showcase .showcase-text p {
+  color: #5e5e5e;
+  font-size: 18px;
+}
+
+.container .form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .form .mobile-logo {
+  display: none;
+}
+
+.container .form .form-title {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.container .form .form-title h1 {
+  font-family: Lora;
+  text-align: center;
+  color: #61227d;
+  font-size: 32px;
+}
+
+.container .form .form-title p {
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .form form {
+  width: 100%;
+  padding: 0px 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container .form form .email {
+  width: 100%;
+}
+
+.container .form form .email label,
+.container .form form .password label {
+  display: block;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container span {
+  color: red;
+}
+
+.container .form form .email input,
+.container .form form .password input {
+  width: 100%;
+  padding: 13px 10px;
+  margin-top: 8px;
+  border: solid #dddddd 1px;
+  border-radius: 8px;
+}
+
+.container .form form .form-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .form form .form-features .remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .form form .form-features .remember input {
+  color: #7d7d7d;
+  border: solid 1px #7d7d7d;
+}
+
+.container .form form .form-features a {
+  color: #61227d;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container .form form button {
+  width: 100%;
+  background-color: #61227d;
+  color: white;
+  padding: 11px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.container .form form .signup-cta {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+}
+
+.container .form form .signup-cta p {
+  color: #5e5e5e;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .form form .signup-cta a {
+  color: #61227d;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .showcase {
+    display: none;
+  }
+
+  .container .form {
+    width: 100%;
+    display: block;
+  }
+
+
+  .container .form .mobile-logo {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .form .form-title p {
+    text-align: center;
+    padding: 0px 16px;
+  }
+
+  .container .form form {
+    padding: 0 16px;
+  }
+}
